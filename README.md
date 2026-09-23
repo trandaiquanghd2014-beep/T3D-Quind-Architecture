@@ -16,8 +16,8 @@ The **T3D-Quind Metric Architecture** is a next-generation conceptual 3D monolit
 - **Ổn định phần cứng:** Ưu tiên tuyệt đối độ trễ thấp (0 latency), chống hiện tượng lệch pha thời gian (timing jitter) ở xung nhịp cao.
 
 ## PHẦN 2: HỆ THỐNG NGƯỠNG BẢO TOÀN (THRESHOLD PROTOCOL)
-- **Hệ Tam (Base-3):** Ngưỡng chuẩn từ $\le 4$ chữ số trở xuống $\rightarrow$ Giữ nguyên bản 100%, không rút gọn.
-- **Hệ Ngũ & Thập (Base-5 & Base-10):** Ngưỡng chuẩn từ $\le 6$ chữ số trở xuống $\rightarrow$ Bảo toàn trọn vẹn cấu trúc chuỗi thô (như `011010` hay `1005`).
+- **Hệ Tam (Base-3):** Ngưỡng chuẩn từ $\le 4$ chữ số trở xuống $-$ Giữ nguyên bản 100%, không rút gọn.
+- **Hệ Ngũ & Thập (Base-5 & Base-10):** Ngưỡng chuẩn từ $\le 6$ chữ số trở xuống $-$ Bảo toàn trọn vẹn cấu trúc chuỗi thô (như `011010` hay `1005`).
 - **Vượt ngưỡng:** Kích hoạt bộ lọc lõi cô đặc tín hiệu khi vượt quá các hạn mức trên.
 
 ## PHẦN 3: MÔ HÌNH HAI TIỂU ĐỘI & ĐẠI SỐ TRIỆT TIÊU
@@ -33,7 +33,7 @@ The **T3D-Quind Metric Architecture** is a next-generation conceptual 3D monolit
 
 ## PHẦN 5: CHỐNG TRÔI PHA & QUY TRÌNH PIPELINE
 - **Chống trôi pha (Anti-Jitter):** Bộ đệm nhận diện chính xác khung gói tin dựa trên hạn mức độ dài, giữ dạng sóng điện luôn vuông vức.
-- **Pipeline 3 bước:** Ánh xạ thô $\rightarrow$ Kiểm tra ngưỡng $\rightarrow$ Thực thi mạch trực tiếp hoặc qua bộ lọc lõi.
+- **Pipeline 3 bước:** Ánh xạ thô $\rightarrow$ Kiểm tra ngưỡng $-$ Thực thi mạch trực tiếp hoặc qua bộ lọc lõi.
 
 ## PHẦN 6: TỐI ƯU HÓA BỘ NHỚ ĐỆM & THANH GHI
 - **Thanh ghi đa trạng thái:** Lưu trữ trực tiếp theo hệ Tam và hệ Ngũ, giúp giảm từ 30% đến 50% số lượng transistor cần thiết.
